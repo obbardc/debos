@@ -293,6 +293,14 @@ func main() {
 		}
 
 		if exitcode != 0 {
+			fmt.Printf("fakemachine: trapped non-zero exit (%d)\n", exitcode)
+
+			switch exitcode {
+			case 137:
+				fmt.Println("run the recipe again with --show-boot to determine cause")
+				fmt.Println("this may be caused by the out-of-memory killer: the disk by default is backed by 2G memory")
+			}
+
 			context.State = debos.Failed
 			return
 		}
