@@ -103,8 +103,11 @@ this:
 
 ## Other examples
 
-This example builds a customized image for a Raspberry Pi 3.
-https://github.com/go-debos/debos-recipes
+The example in this repository under [doc/examples/example.yaml](doc/examples/example.yaml)
+builds a basic Debian tarball.
+
+A collection of user-submitted recipes are available under the [debos-recipes](https://github.com/go-debos/debos-recipes)
+repository.
 
 ## Environment variables
 
